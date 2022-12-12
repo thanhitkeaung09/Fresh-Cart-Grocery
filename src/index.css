@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*@layer components{*/
+/*    .shadow-beautiful{*/
+/*        @apply */
+/*    }*/
+/*}*/
+
+.shadow-beautiful{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+*{
+    font-family: 'Inter', sans-serif;
+    /*font-weight: 600;*/
+}
+
+.swiper {
+    width: 100%;
+    /*background-color: #e3fcf7;*/
+
+    /*height: 70vh;*/
+}
+.main-page-bg{
+    background-color: #e3fcf7;
+}
+.self-page-bg{
+    background-color: #dfe2e1;
+}
+
+.bg-image{
+    background-image: url("assets/images/model.png");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.coffee-bg{
+    background-image: url("assets/images/coffee.jpg");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -474px;
+
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000000 !important;
+}
+
+.fresh-bg{
+    background-image: url("./assets/images/Fresh.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.bun-bg{
+    background-image: url("./assets/images/Bun.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+
+
+@keyframes fadeInDown {
+    from {
+        opacity: 1;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
